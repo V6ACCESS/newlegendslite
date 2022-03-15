@@ -14,25 +14,28 @@ MyScriptName='Bonveio'
 
 # OpenSSH Ports
 SSH_Port1='22'
-SSH_Port2='23'
+SSH_Port2='225'
 
 # Your SSH Banner
 SSH_Banner='https://pastebin.com/raw/d7jULvq8'
 
 # Dropbear Ports
-Dropbear_Port1='222'
-Dropbear_Port2='333'
+Dropbear_Port1='550'
+Dropbear_Port2='555'
 
 # Stunnel Ports
-Stunnel_Port1='110' # through Dropbear
-Stunnel_Port2='111' # through OpenSSH
+Stunnel_Port1='443' # through Dropbear
+Stunnel_Port2='444' # through OpenSSH
 
 # OpenVPN Ports
-OpenVPN_Port1='443' # take note when you change this port, openvpn sun noload config will not work
+OpenVPN_Port1='110' # take note when you change this port, openvpn sun noload config will not work
+OpenVPN_Port2='1194'
+OpenVPN_Port3='465'
 
 # Privoxy Ports (must be 1024 or higher)
-Privoxy_Port1='8888'
-Privoxy_Port2='9999'
+Privoxy_Port1='8000'
+Privoxy_Port2='8080'
+Privoxy_Port3='8118'
 
 # OpenVPN Config Download Port
 OvpnDownload_Port='86' # Before changing this value, please read this document. It contains all unsafe ports for Google Chrome Browser, please read from line #23 to line #89: https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/net/base/port_util.cc
